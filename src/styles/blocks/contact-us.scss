@@ -1,4 +1,17 @@
 .contact-us {
+  &__formWithDescription {
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+    }
+
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
   &__info {
     margin: 0 0 24px;
   }

@@ -11,8 +11,8 @@
       display: block;
       padding-bottom: 100%;
     }
-        
-    @include onDesktop {
+
+    @include onTablet {
       height: 320px;
       padding-bottom: 0;
     }
@@ -40,5 +40,8 @@
   &__link {
     color: $colorGrey;
     text-decoration: none;
+    &:hover {
+      color:$colorHoverLinks;
+    }
   }
 }

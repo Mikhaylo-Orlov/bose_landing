@@ -6,6 +6,10 @@
       margin-bottom: 0;
     }
 
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+
     @include onDesktop {
       margin-bottom: 0;
     }
@@ -35,6 +39,16 @@
     }
   }
 
+  &__info {
+    @include onTablet {
+      padding-left: 104px;
+    }
+
+    @include onDesktop {
+      padding-left: 0px;
+    }
+  }
+
   &__name {
     margin: 0 0 8px;
 
@@ -51,9 +65,13 @@
     margin: 0 0 12px;
     font-weight: 400;
   }
-}
 
-.link {
-  text-decoration: none;
-  color: $colorGrey;
+  &__link {
+    text-decoration: none;
+    color: $colorGrey;
+    
+    &:hover {
+      color: $colorHoverLinks;
+  }
+  }
 }

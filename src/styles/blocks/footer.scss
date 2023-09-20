@@ -6,6 +6,10 @@
   background-position: center;
 
   @include onDesktop {
+    height: 400px;
+  }
+
+  @include onDesktop {
     height: 460px;
   }
 }
